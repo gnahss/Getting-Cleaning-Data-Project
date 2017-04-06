@@ -59,5 +59,5 @@ Replace 'std()' with 'STDEV'
 
 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject.  
 First, melt the data frame such that each row contains only one observation, with the feature type stated in a column called 'variable'.  
-Next, use the command 'dcast' to obtain the average of each variable for every subject and activity.  
+Next, use the command *dcast* to obtain the average of each variable for every subject and activity.  
 Finally, write the data frame to a file named 'tidy.csv'.
