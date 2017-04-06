@@ -49,4 +49,4 @@ names(m) <- gsub("std\\(\\)", "STDEV", names(m))
 # 5. Create a second tidy data set with the average of each variable for each activity and subject
 dataMelt <- melt(m, id=c('subject','activity')) # melt data so each row is one observation
 average <- dcast(dataMelt, subject+activity ~ variable, mean) # recast data to get mean of each variable
-write.csv(average, 'tidy.csv', row.names=FALSE)
+write.table(average, 'tidy.txt', row.names=FALSE)
